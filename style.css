@@ -186,7 +186,7 @@ header {
 }
 @media only screen and (max-width: 38.75em) {
   .splitter__input-box--1::before, .splitter__input-box--2::before {
-    top: 0.25;
+    top: 0.25rem;
   }
 }
 
