@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="img_src" href="design/desktop-preview.jpg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="Logo" />
+    </header>
+    <main class="splitter">
+      <div class="splitter__options">
+        <div class="splitter__input-box splitter__input-box--1">
+          <p>Bill</p>
+          <p class="notification notification-bill">Cant' be zero</p>
+          <input
+            type="text"
+            data-type="bill"
+            placeholder="0"
+            autocomplete="off"
+            maxlength="10"
+          />
+        </div>
+        <div class="splitter__percent">
+          <p>Select Tip %</p>
+          <p class="notification notification-percent">Cant' be zero</p>
+          <div class="splitter__tips">
+            <button class="splitter__tip">5%</button>
+            <button class="splitter__tip">10%</button>
+            <button class="splitter__tip">15%</button>
+            <button class="splitter__tip">25%</button>
+            <button class="splitter__tip">30%</button>
+            <input
+              type="text"
+              placeholder="Custom"
+              autocomplete="off"
+              maxlength="2"
+              data-type="percent"
+              class="percent"
+            />
+          </div>
+        </div>
+        <div class="splitter__input-box splitter__input-box--2">
+          <p>Number of People</p>
+          <p class="notification notification-people">Cant' be zero</p>
+          <input
+            type="text"
+            placeholder="0"
+            autocomplete="off"
+            maxlength="8"
+            data-type="people"
+          />
+        </div>
+      </div>
+      <div class="splitter__results">
+        <div class="splitter__result">
+          <p class="para-white">Tip Amount</p>
+          <p class="per">/ person</p>
+          <h1 class="result tip-result">$0.00</h1>
+        </div>
+        <div class="splitter__result">
+          <p class="para-white">Total</p>
+          <p class="per">/ person</p>
+          <h1 class="result total-result">$0.00</h1>
+        </div>
+        <button class="button">Reset</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/jerry-the-kid">Hao Pham</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
