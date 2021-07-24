@@ -184,6 +184,11 @@ header {
   -webkit-transform: translateY(114%);
           transform: translateY(114%);
 }
+@media only screen and (max-width: 38.75em) {
+  .splitter__input-box--1::before, .splitter__input-box--2::before {
+    top: 0.25;
+  }
+}
 
 .splitter__input-box--1::before {
   background-image: url(images/icon-dollar.svg);
