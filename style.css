@@ -208,7 +208,7 @@ header {
 
 .splitter__input-box input::-ms-input-placeholder {
   opacity: 0.4;
-}
+} 
 
 .splitter__input-box input::placeholder {
   opacity: 0.4;
